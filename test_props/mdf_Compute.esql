@@ -4,9 +4,9 @@ DECLARE ns NAMESPACE 'http://www.example.org/NewWSDLFile/';
 CREATE COMPUTE MODULE mdf_Compute
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
-		set OutputRoot.SOAP.Body.ns:NewOperationResponse.out = InputRoot.SOAP.Body.ns:NewOperation.in;
+		--set OutputRoot.SOAP.Body.ns:NewOperationResponse.out = InputRoot.SOAP.Body.ns:NewOperation.in;
 		-- CALL CopyMessageHeaders();
-		-- CALL CopyEntireMessage();
+		 CALL CopyEntireMessage();
 		RETURN TRUE;
 	END;
 
