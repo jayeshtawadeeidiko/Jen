@@ -1,22 +1,18 @@
 pipeline {
     agent any
- 
+    stages {
         stage('Create File') {
             steps {
                 script {
-                    def filename = "commit_${env.BUILD_NUMBER}.txt"
-                    def content = "Commit detected at: ${new Date()}\nCommit ID: ${env.GIT_COMMIT}"
-
-                    writeFile file: filename, text: content
-                    echo "File ${filename} created"
+                    sh 'echo "Hello, Jenkins!" > test.txt'
                 }
             }
         }
 
         stage('Archive Artifact') {
             steps {
-                archiveArtifacts artifacts: '*.txt', fingerprint: true
+                archiveArtifacts artifacts: 'test.txt', fingerprint: true
             }
         }
     }
-
+}
