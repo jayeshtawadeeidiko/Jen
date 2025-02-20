@@ -4,7 +4,7 @@ pipeline {
         stage('Create File') {
             steps {
                 script {
-                    sh 'echo "Hello, Jenkins!" > test.txt'
+                    sh 'echo "Hello, Jenkins!" >> test.txt'
                 }
             }
         }
