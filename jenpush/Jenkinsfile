@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+ 
+        stage('Create File') {
+            steps {
+                script {
+                    def filename = "commit_${env.BUILD_NUMBER}.txt"
+                    def content = "Commit detected at: ${new Date()}\nCommit ID: ${env.GIT_COMMIT}"
+
+                    writeFile file: filename, text: content
+                    echo "File ${filename} created"
+                }
+            }
+        }
+
+        stage('Archive Artifact') {
+            steps {
+                archiveArtifacts artifacts: '*.txt', fingerprint: true
+            }
+        }
+    }
+}
