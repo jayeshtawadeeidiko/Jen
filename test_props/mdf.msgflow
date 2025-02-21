@@ -9,10 +9,10 @@
       <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_31" location="50,70" URLSpecifier="/path" messageDomainProperty="XMLNSC">
         <translation xmi:type="utility:ConstantString" string="HTTP Input"/>
       </nodes>
-      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_32" location="430,50">
+      <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_32" location="450,50">
         <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="262,81" computeExpression="esql://routine/#mdf_Compute.Main">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="250,30" computeExpression="esql://routine/#mdf_Compute.Main">
         <translation xmi:type="utility:ConstantString" string="Compute"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_1" sourceNode="FCMComposite_1_31" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>

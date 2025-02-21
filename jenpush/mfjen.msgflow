@@ -6,7 +6,7 @@
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/jenpush/icons/full/obj16/mfjen.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/jenpush/icons/full/obj30/mfjen.gif"/>
     <composition>
-      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="150,73" URLSpecifier="/jen">
+      <nodes xmi:type="ComIbmWSInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="90,30" URLSpecifier="/jen">
         <translation xmi:type="utility:ConstantString" string="HTTP Input"/>
       </nodes>
       <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="379,67">
